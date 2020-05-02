@@ -1,0 +1,334 @@
+//Animated hamburger
+
+.animated-hamburger{
+    position: relative;
+    
+    &__checkbox{
+        display: none;
+    }
+    
+    &__icon{
+        margin-right: 1.4rem;
+        position: relative;
+        height: 4rem;
+        width: 2rem;
+
+
+        &,
+        &::before,
+        &::after{
+            width: 3rem;
+            height: 2px;
+            display: inline-block;
+            background-color:  var(--color-grey-2);
+        }
+    
+        &::before,
+        &::after{
+            content: '';
+            position: absolute;
+            left: 0;
+            transition: all .2s;
+        }
+    
+        &::before{
+            top: -1rem;
+            background-color: var(--color-grey-2);
+        }
+    
+        &::after{
+            top: 1rem;
+            background-color:  var(--color-grey-2);
+        }
+    }
+
+    &__label{
+        height: 5rem;
+        width: 3rem;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    &__checkbox:checked + &__label &__icon{
+        background-color: transparent;
+    }
+
+    &__checkbox:checked + &__label &__icon::before{
+        top: 0;
+        transform: rotate(45deg) translateY(.7rem);
+    }
+
+    &__checkbox:checked + &__label &__icon::after{
+        transform: rotate(-45deg) translateY(-.8rem);
+    }
+
+
+}
+
+//LOGO
+
+.logo{
+
+    &__text{
+        font-size: 2.5rem;
+        font-weight: 600;
+        color: var(--color-white-1);
+        background-color: var(--color-black);
+        padding: 0 .4rem;
+
+    }
+}
+
+//SEARCH BOX
+
+.search{
+    display: flex;
+    margin-left: 3rem;
+    margin-right: auto;
+
+    display: flex;
+    align-items: center;
+    flex:  0 0 40%;
+
+    &__input{
+        padding: .5rem 2rem 0 2rem;
+        width: 70%;
+        height: 3rem;
+        border: 2px solid var(--color-grey-3);
+        margin-right: -3rem;
+
+        &:focus{
+            outline: none;
+        }
+
+        &::-webkit-input-placeholder{
+            font-size: 1.5rem;
+            align-self: center;
+            font-family: inherit;
+        }
+    }
+
+    &__icon{
+        height: 3rem;
+        width: 3rem;
+        background-color:var(--color-grey-5);
+        padding: .5rem;
+
+    }
+}
+
+.cta{
+    color: var(--color-white-1);
+    background-color: var(--color-primary);
+    font-size: 2rem;
+    padding: .3rem 1rem;
+    margin-right: 1%;
+
+}
+
+.log-in{
+    font-size: 1.6rem;
+    margin-right: 1%;
+}
+
+.burger{
+    cursor: pointer;
+    position: relative;
+
+    &__icon{
+        height: 2rem;
+        width: 2rem;
+
+        &:hover  + .dropdown{
+            display: block;
+        }
+    }
+}
+
+.dropdown{
+    position: absolute;
+    left: -10rem;
+    z-index: 50;
+    background-color: var(--color-black);
+    width: 15rem;
+    display: none;
+    
+    &__item{
+        font-size: 1.6rem;
+        list-style: none;
+        color: var(--color-white-1);
+        padding: 1rem;
+
+    }
+}
+
+//USER NAV
+.user-nav{
+    font-size: 2rem;
+
+    &__country{
+        color: var(--color-white-1);
+        background-color: var(--color-black);
+        padding: .51rem 1rem;
+        margin-right: 1rem;
+        margin-bottom: .7em;
+
+        &--icon{
+
+        }
+    }
+
+    &__tab{
+        margin-right: 4px;
+        margin-bottom: .7em;
+        padding: .5rem .8rem;
+
+        &--red{
+            background-color: var(--color-primary);
+            color: var(--color-white-1);
+
+        }
+
+        &--grey{
+            background-color: var(--color-grey-3);
+            color: var(--color-white-1);
+        }
+    }
+
+    &__icon{
+        width: 2rem;
+        height: 2rem;
+        align-self: center;
+        // color: var(--color-grey-5);
+    }
+}
+
+//content-box
+.content-box{
+    flex: 0 0 19%;
+    margin-bottom: .5rem;
+    // height: 10rem;
+    
+
+    &:not(:nth-of-type(5n)){
+        margin-right: .5rem;
+    }
+
+    &__top{
+        position: relative;
+    }
+
+    &__img{
+        width: 100%;
+    }
+
+    &__rating{        
+        background-color: var(--color-primary);
+        color: var(--color-white-1);
+        font-size: 1.4rem;
+        padding: 0 .2rem;
+        width: 4rem;
+        text-align: center;
+        border-radius: 4px;
+        font-weight: 600;
+
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+
+    &__down{
+        font-weight: 600;
+        color: var(--color-grey-6);
+
+        &--title{
+            font-size: 1.4rem;
+            text-align: center;
+        }
+
+        &--details{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .detail{
+            font-size: 1.1rem;
+
+        }
+        
+        & .name{
+            text-decoration: underline;
+            cursor: pointer;
+
+            &:hover{
+                text-decoration: none;
+            }
+        }
+
+         & .duration{
+             background-color: var(--color-grey-3);
+            //  padding: 1px;
+             border-radius: 3px;
+         }
+    }
+}
+
+.page-nav{
+
+    &__btn{
+        padding: 1rem;
+        background-color: var(--color-white-1);
+        border: 1px solid var(--color-grey-6);
+        font-size: 1.4rem;
+        cursor: pointer;
+    
+        &:not(:last-child){
+            margin-right: .4rem;
+        }
+    
+        &:hover{
+            background-color: var(--color-grey-3);
+        }
+    }
+
+    &__anchor{
+        font-size: 1.5rem;
+        color: var(--color-black);
+        font-weight: 600;
+        align-self: center;
+        margin:  0 .9rem;
+
+        &:hover{
+            color: var(--color-grey-2);
+            text-decoration: none;
+        }
+    }
+}
+
+
+//BUTTON LARGE
+.btn-large{
+    display: flex;
+    font-size: 2rem;
+    color: var(--color-grey-6);
+    padding: .6rem 1.4rem;
+    background-color: var(--color-grey-4);
+    cursor: pointer;
+    border: 1px solid var(--color-grey-3);
+
+    &:hover{
+        background-color: var(--color-grey-3);
+    }
+
+    &:focus{
+        outline: none;
+    }
+
+    &__icon{
+        height: 2rem;
+        width: 2rem;
+        margin-right: .5rem;
+    }
+}

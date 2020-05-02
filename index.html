@@ -3,9 +3,427 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <link rel="shortcut icon" type="image/png" href="img/flex-icon.png">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Flexbox webpage</title>
 </head>
 <body>
-    
+
+    <div class="container">         
+        <header class="header">    
+            <div class="animated-hamburger">
+                <input type="checkbox" class="animated-hamburger__checkbox" id="burger-toggle">
+                <label for="burger-toggle" class="animated-hamburger__label">
+                    <div class="animated-hamburger__icon">
+                        &nbsp;
+                    </div>           
+                </label>
+            </div>
+            <div class="logo">
+                <div class="logo__text">LOREMFD</div>
+            </div>    
+            <form action="#" class="search">                
+                <input type="search" class="search__input" placeholder="Search 9000 Content">
+                <svg class="search__icon">
+                    <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+                </svg>
+            </form>    
+            <div class="cta">
+                Register
+            </div>    
+            <div class="log-in">
+                Sign In
+            </div>    
+            <div class="burger">                
+                <svg class="burger__icon">
+                    <use xlink:href="img/sprite.svg#icon-dots-three-vertical"></use>
+                </svg>                
+                <div class="dropdown">
+                    <ul class="dropdown__list">
+                        <li class="dropdown__item"> Loading</li>
+                        <li class="dropdown__item">begin shortly</li>
+                        <li class="dropdown__item">css position</li>
+                        <li class="dropdown__item"> Uploaded</li>
+                        <li class="dropdown__item">available</li>
+                        <li class="dropdown__item">inline block</li>
+                        <li class="dropdown__item"> element</li>
+                    </ul>
+                </div>
+            </div>
+
+        </header>
+
+        <nav class="user-nav">
+            <div class="user-nav__country">
+                Nigeria
+                <div class="user-nav__country--icon"></div>
+            </div>
+            <button class="user-nav__tab user-nav__tab--red">began</button>         
+            <button class="user-nav__tab user-nav__tab--red">With Friends</button>         
+            <button class="user-nav__tab user-nav__tab--red">Scrabble</button>         
+            <button class="user-nav__tab user-nav__tab--red">advantage </button>         
+            <button class="user-nav__tab user-nav__tab--red">opponent</button>         
+            <button class="user-nav__tab user-nav__tab--red">next move</button>         
+            <button class="user-nav__tab user-nav__tab--red">point counts</button>         
+            <button class="user-nav__tab user-nav__tab--red">PRIVACY POLICY</button>         
+            <button class="user-nav__tab user-nav__tab--grey">audio</button>
+            <button class="user-nav__tab user-nav__tab--grey">among</button>
+            <button class="user-nav__tab user-nav__tab--grey">asked</button>
+            <button class="user-nav__tab user-nav__tab--grey">adult</button>
+            <button class="user-nav__tab user-nav__tab--grey">added</button>
+            <button class="user-nav__tab user-nav__tab--grey">Dictionary</button>
+            <button class="user-nav__tab user-nav__tab--grey">WordFinder</button>
+            <button class="user-nav__tab user-nav__tab--grey">Articles</button>
+            <button class="user-nav__tab user-nav__tab--grey">ability</button>
+            <button class="user-nav__tab user-nav__tab--grey">achieve</button>
+            <button class="user-nav__tab user-nav__tab--grey">account</button>
+            <button class="user-nav__tab user-nav__tab--grey">awesome</button>
+            <button class="user-nav__tab user-nav__tab--grey">awarded</button>
+            <button class="user-nav__tab user-nav__tab--grey">simpler</button>
+            <button class="user-nav__tab user-nav__tab--grey">snapped</button>
+            <button class="user-nav__tab user-nav__tab--grey">snapped</button>
+            <button class="user-nav__tab user-nav__tab--grey">languages</button>
+            <button class="user-nav__tab user-nav__tab--grey">recommend </button>
+            <button class="user-nav__tab user-nav__tab--grey">SELECTED </button>
+            <button class="user-nav__tab user-nav__tab--grey">itaque </button>
+            <button class="user-nav__tab user-nav__tab--grey">doloremque </button>
+            <button class="user-nav__tab user-nav__tab--grey">Breakfast </button>
+            <button class="user-nav__tab user-nav__tab--grey">Airport</button>
+
+            <svg class="user-nav__icon">
+                <use xlink:href="img/sprite.svg#icon-circle-with-plus"></use>
+            </svg>
+        </nav>
+
+        <main>
+            <div class="content">
+                <div class="content-box">
+                    <div class="content-box__top">
+                        <img src="./img/img-10-large.jpg" alt="image" class="content-box__img">
+                        <div class="content-box__rating">720</div>
+                    </div>
+                    <div class="content-box__down">
+                        <p class="content-box__down--title">Lorem ipsum dolor sit amet. Lorem, ipsum.</p>
+                        <div class="content-box__down--details">
+                            <p class="name detail ">loremdfg</p>
+                            <p class="views detail">- 100k views -</p>
+                            <p class="duration detail">31 min</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-box">
+                    <div class="content-box__top">
+                        <img src="./img/img-01-large.jpg" alt="image" class="content-box__img">
+                        <div class="content-box__rating">720</div>
+                    </div>
+                    <div class="content-box__down">
+                        <p class="content-box__down--title">Lorem ipsum dolor sit amet. Lorem, ipsum.</p>
+                        <div class="content-box__down--details">
+                            <p class="name detail">loremdfg</p>
+                            <p class="views detail">- 100k views -</p>
+                            <p class="duration detail">31 min</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-box">
+                    <div class="content-box__top">
+                        <img src="./img/img-11-large.jpg" alt="image" class="content-box__img">
+                        <div class="content-box__rating">720</div>
+                    </div>
+                    <div class="content-box__down">
+                        <p class="content-box__down--title">Lorem ipsum dolor sit amet. Lorem, ipsum.</p>
+                        <div class="content-box__down--details">
+                            <p class="name detail">loremdfg -</p>
+                            <p class="views detail">100k views -</p>
+                            <p class="duration detail">31 min</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-box">
+                    <div class="content-box__top">
+                        <img src="./img/img-04-large.jpg" alt="image" class="content-box__img">
+                        <div class="content-box__rating">720</div>
+                    </div>
+                    <div class="content-box__down">
+                        <p class="content-box__down--title">Lorem ipsum dolor sit amet. Lorem, ipsum.</p>
+                        <div class="content-box__down--details">
+                            <p class="name detail">loremdfg</p>
+                            <p class="views detail">100k views -</p>
+                            <p class="duration detail">31 min</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-box">
+                    <div class="content-box__top">
+                        <img src="./img/img-08-large.jpg" alt="image" class="content-box__img">
+                        <div class="content-box__rating">720</div>
+                    </div>
+                    <div class="content-box__down">
+                        <p class="content-box__down--title">Lorem ipsum dolor sit amet. Lorem, ipsum.</p>
+                        <div class="content-box__down--details">
+                            <p class="name detail">loremdfg </p>
+                            <p class="detail">- 100k views -</p>
+                            <p class="duration detail">31 min</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-box">
+                    <div class="content-box__top">
+                        <img src="./img/img-02-large.jpg" alt="image" class="content-box__img">
+                        <div class="content-box__rating">720</div>
+                    </div>
+                    <div class="content-box__down">
+                        <p class="content-box__down--title">Lorem ipsum dolor sit amet. Lorem, ipsum.</p>
+                        <div class="content-box__down--details">
+                            <p class="name detail ">loremdfg</p>
+                            <p class="views detail">- 100k views -</p>
+                            <p class="duration detail">31 min</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-box">
+                    <div class="content-box__top">
+                        <img src="./img/img-03-large.jpg" alt="image" class="content-box__img">
+                        <div class="content-box__rating">720</div>
+                    </div>
+                    <div class="content-box__down">
+                        <p class="content-box__down--title">Lorem ipsum dolor sit amet. Lorem, ipsum.</p>
+                        <div class="content-box__down--details">
+                            <p class="name detail">loremdfg</p>
+                            <p class="views detail">- 100k views -</p>
+                            <p class="duration detail">31 min</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-box">
+                    <div class="content-box__top">
+                        <img src="./img/img-06-large.jpg" alt="image" class="content-box__img">
+                        <div class="content-box__rating">720</div>
+                    </div>
+                    <div class="content-box__down">
+                        <p class="content-box__down--title">Lorem ipsum dolor sit amet. Lorem, ipsum.</p>
+                        <div class="content-box__down--details">
+                            <p class="name detail">loremdfg -</p>
+                            <p class="views detail">100k views -</p>
+                            <p class="duration detail">31 min</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-box">
+                    <div class="content-box__top">
+                        <img src="./img/img-07-large.jpg" alt="image" class="content-box__img">
+                        <div class="content-box__rating">720</div>
+                    </div>
+                    <div class="content-box__down">
+                        <p class="content-box__down--title">Lorem ipsum dolor sit amet. Lorem, ipsum.</p>
+                        <div class="content-box__down--details">
+                            <p class="name detail">loremdfg</p>
+                            <p class="views detail">100k views -</p>
+                            <p class="duration detail">31 min</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-box">
+                    <div class="content-box__top">
+                        <img src="./img/img-09-large.jpg" alt="image" class="content-box__img">
+                        <div class="content-box__rating">720</div>
+                    </div>
+                    <div class="content-box__down">
+                        <p class="content-box__down--title">Lorem ipsum dolor sit amet. Lorem, ipsum.</p>
+                        <div class="content-box__down--details">
+                            <p class="name detail">loremdfg </p>
+                            <p class="detail">- 100k views -</p>
+                            <p class="duration detail">31 min</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-box">
+                    <div class="content-box__top">
+                        <img src="./img/img-05-large.jpg" alt="image" class="content-box__img">
+                        <div class="content-box__rating">720</div>
+                    </div>
+                    <div class="content-box__down">
+                        <p class="content-box__down--title">Lorem ipsum dolor sit amet. Lorem, ipsum.</p>
+                        <div class="content-box__down--details">
+                            <p class="name detail ">loremdfg</p>
+                            <p class="views detail">- 100k views -</p>
+                            <p class="duration detail">31 min</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-box">
+                    <div class="content-box__top">
+                        <img src="./img/img-01-large.jpg" alt="image" class="content-box__img">
+                        <div class="content-box__rating">720</div>
+                    </div>
+                    <div class="content-box__down">
+                        <p class="content-box__down--title">Lorem ipsum dolor sit amet. Lorem, ipsum.</p>
+                        <div class="content-box__down--details">
+                            <p class="name detail">loremdfg</p>
+                            <p class="views detail">- 100k views -</p>
+                            <p class="duration detail">31 min</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-box">
+                    <div class="content-box__top">
+                        <img src="./img/img-03-large.jpg" alt="image" class="content-box__img">
+                        <div class="content-box__rating">720</div>
+                    </div>
+                    <div class="content-box__down">
+                        <p class="content-box__down--title">Lorem ipsum dolor sit amet. Lorem, ipsum.</p>
+                        <div class="content-box__down--details">
+                            <p class="name detail">loremdfg -</p>
+                            <p class="views detail">100k views -</p>
+                            <p class="duration detail">31 min</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-box">
+                    <div class="content-box__top">
+                        <img src="./img/img-04-large.jpg" alt="image" class="content-box__img">
+                        <div class="content-box__rating">720</div>
+                    </div>
+                    <div class="content-box__down">
+                        <p class="content-box__down--title">Lorem ipsum dolor sit amet. Lorem, ipsum.</p>
+                        <div class="content-box__down--details">
+                            <p class="name detail">loremdfg</p>
+                            <p class="views detail">100k views -</p>
+                            <p class="duration detail">31 min</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-box">
+                    <div class="content-box__top">
+                        <img src="./img/img-10-large.jpg" alt="image" class="content-box__img">
+                        <div class="content-box__rating">720</div>
+                    </div>
+                    <div class="content-box__down">
+                        <p class="content-box__down--title">Lorem ipsum dolor sit amet. Lorem, ipsum.</p>
+                        <div class="content-box__down--details">
+                            <p class="name detail">loremdfg </p>
+                            <p class="detail">- 100k views -</p>
+                            <p class="duration detail">31 min</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-box">
+                    <div class="content-box__top">
+                        <img src="./img/img-11-large.jpg" alt="image" class="content-box__img">
+                        <div class="content-box__rating">720</div>
+                    </div>
+                    <div class="content-box__down">
+                        <p class="content-box__down--title">Lorem ipsum dolor sit amet. Lorem, ipsum.</p>
+                        <div class="content-box__down--details">
+                            <p class="name detail ">loremdfg</p>
+                            <p class="views detail">- 100k views -</p>
+                            <p class="duration detail">31 min</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-box">
+                    <div class="content-box__top">
+                        <img src="./img/img-01-large.jpg" alt="image" class="content-box__img">
+                        <div class="content-box__rating">720</div>
+                    </div>
+                    <div class="content-box__down">
+                        <p class="content-box__down--title">Lorem ipsum dolor sit amet. Lorem, ipsum.</p>
+                        <div class="content-box__down--details">
+                            <p class="name detail">loremdfg</p>
+                            <p class="views detail">- 100k views -</p>
+                            <p class="duration detail">31 min</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-box">
+                    <div class="content-box__top">
+                        <img src="./img/img-03-large.jpg" alt="image" class="content-box__img">
+                        <div class="content-box__rating">720</div>
+                    </div>
+                    <div class="content-box__down">
+                        <p class="content-box__down--title">Lorem ipsum dolor sit amet. Lorem, ipsum.</p>
+                        <div class="content-box__down--details">
+                            <p class="name detail">loremdfg -</p>
+                            <p class="views detail">100k views -</p>
+                            <p class="duration detail">31 min</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-box">
+                    <div class="content-box__top">
+                        <img src="./img/img-04-large.jpg" alt="image" class="content-box__img">
+                        <div class="content-box__rating">720</div>
+                    </div>
+                    <div class="content-box__down">
+                        <p class="content-box__down--title">Lorem ipsum dolor sit amet. Lorem, ipsum.</p>
+                        <div class="content-box__down--details">
+                            <p class="name detail">loremdfg</p>
+                            <p class="views detail">100k views -</p>
+                            <p class="duration detail">31 min</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-box">
+                    <div class="content-box__top">
+                        <img src="./img/img-08-large.jpg" alt="image" class="content-box__img">
+                        <div class="content-box__rating">720</div>
+                    </div>
+                    <div class="content-box__down">
+                        <p class="content-box__down--title">Lorem ipsum dolor sit amet. Lorem, ipsum.</p>
+                        <div class="content-box__down--details">
+                            <p class="name detail">loremdfg </p>
+                            <p class="detail">- 100k views -</p>
+                            <p class="duration detail">31 min</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <nav class="page-nav">                
+                <a href="#" class="page-nav__anchor">Prev</a>
+
+                <button class="page-nav__btn">3</button>
+                <button class="page-nav__btn">5</button>
+                <button class="page-nav__btn">6</button>
+                <button class="page-nav__btn">7</button>
+                <button class="page-nav__btn">8</button>
+                <button class="page-nav__btn">9</button>
+                <button class="page-nav__btn">10</button>
+                <button class="page-nav__btn">11</button>
+                <button class="page-nav__btn">12</button>
+                <button class="page-nav__btn">13</button>
+                <button class="page-nav__btn">14</button>
+                <button class="page-nav__btn">15</button>
+                <button class="page-nav__btn">16</button>
+                <button class="page-nav__btn">17</button>
+                <button class="page-nav__btn">18</button>
+                <button class="page-nav__btn">19</button>
+                <button class="page-nav__btn">20</button>
+                <button class="page-nav__btn">21</button>
+                <button class="page-nav__btn">22</button>
+                <button class="page-nav__btn">23</button>
+
+                <a href="#" class="page-nav__anchor">Next</a>
+            </nav>
+
+            <div class="warning">                
+                <button class="btn-large">
+                    <span>
+                        <svg class="btn-large__icon">
+                            <use xlink:href="img/sprite.svg#icon-block"></use>
+                        </svg>
+                    </span>
+                    Lorem ipsum dolor sit amet consectetur.
+                </button>
+            </div>
+        </main>
+    </div>
 </body>
 </html>

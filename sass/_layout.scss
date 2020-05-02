@@ -1,0 +1,38 @@
+.container{
+    // background-color: orangered;
+    max-width: 140rem;
+    margin: 0  10rem 20rem 10rem;
+}
+
+.header{
+    // height: 7rem;
+    font-size: 1.6rem;
+    display: flex;
+    padding: 2rem 0;
+    align-items: center;
+}
+
+.user-nav{
+    display: flex;
+    flex-wrap: wrap ;
+}
+
+.content{
+    display: flex;
+    margin-top: .8rem;
+    flex-wrap: wrap;
+}
+
+.page-nav{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+
+    // margin-bottom: 18rem;
+}
+
+.warning{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
