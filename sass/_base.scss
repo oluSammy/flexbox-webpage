@@ -17,6 +17,12 @@
 
 }
 
+$bp-largest: 56.25em;  //900px
+$bp-medium: 45.9em;    //734px
+$bp-small: 37.5em;    //600px
+$bp-smallest: 32.9em; //525pxpx
+$bp-phone: 26.6em;    //425px
+
 *{
     margin: 0;
     padding: 0;
@@ -27,6 +33,10 @@
 *::after{
     box-sizing: border-box;
     font-size: 62.5%;
+
+    @media only screen  and (max-width: $bp-largest) {
+        font-size: 50%;
+    }
 }
 
 body{

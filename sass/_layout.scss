@@ -1,7 +1,9 @@
 .container{
     // background-color: orangered;
-    max-width: 140rem;
-    margin: 0  10rem 20rem 10rem;
+    max-width: 144rem;
+    margin: 0  auto 20rem auto ;
+
+
 }
 
 .header{
@@ -10,23 +12,41 @@
     display: flex;
     padding: 2rem 0;
     align-items: center;
+    margin: 0 1rem;
+
+    @media only screen and (max-width: $bp-small){
+        flex-wrap: wrap;
+        
+    }
 }
 
 .user-nav{
     display: flex;
     flex-wrap: wrap ;
+    margin: 0 1rem;
+
+    @media only screen  and (max-width: $bp-phone) {
+        display: none;
+    }
 }
 
 .content{
     display: flex;
-    margin-top: .8rem;
+    margin: .8rem 1rem;
     flex-wrap: wrap;
+
+    @media only screen  and (max-width: $bp-medium) {
+        margin-left: 2rem;
+    }
+
 }
 
 .page-nav{
     display: flex;
     justify-content: center;
     margin-top: 3rem;
+
+    flex-wrap: wrap;
 
     // margin-bottom: 18rem;
 }

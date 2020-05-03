@@ -76,6 +76,18 @@
         background-color: var(--color-black);
         padding: 0 .4rem;
 
+        @media only screen and (max-width: $bp-small){
+           margin-right: 27rem;            
+        }
+
+        @media only screen  and (max-width: $bp-smallest) {
+           margin-right: 16rem;
+        }
+
+        @media only screen  and (max-width: $bp-phone) {
+            margin-right: 4rem;
+        }
+
     }
 }
 
@@ -90,12 +102,20 @@
     align-items: center;
     flex:  0 0 40%;
 
+    @media only screen and (max-width: $bp-small){
+        order: 1;
+        flex: 0 0 100%;
+        margin-top: 2rem;
+
+    }
+
     &__input{
         padding: .5rem 2rem 0 2rem;
         width: 70%;
         height: 3rem;
         border: 2px solid var(--color-grey-3);
         margin-right: -3rem;
+        font-size: 1.4rem;
 
         &:focus{
             outline: none;
@@ -208,10 +228,28 @@
     flex: 0 0 19%;
     margin-bottom: .5rem;
     // height: 10rem;
+
+    @media only screen  and (max-width: $bp-medium) {
+        flex: 0 0 23%;
+    }
+
+    @media only screen and (max-width: $bp-small){
+        flex: 0 0 30%;
+        
+    }
+
+    @media only screen  and (max-width: $bp-smallest) {
+        flex: 0 0 47%;
+    }
+
+    @media only screen  and (max-width: $bp-phone) {
+            flex: 0 0 100%;
+            margin-bottom: 3rem;
+    }
     
 
     &:not(:nth-of-type(5n)){
-        margin-right: .5rem;
+        margin-right: 1rem;
     }
 
     &__top{
@@ -291,6 +329,16 @@
         &:hover{
             background-color: var(--color-grey-3);
         }
+
+        @media only screen  and (max-width: $bp-medium) {
+            font-size: 1.2rem;
+            padding: .6rem;
+        }
+
+        @media only screen  and (max-width: $bp-smallest) {
+            padding: .4rem;
+        }
+        margin-top: .8rem;
     }
 
     &__anchor{
